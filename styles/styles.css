@@ -321,7 +321,7 @@ section {
 header {
   background-image: url(../assets/home-header.jpg);
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 85vh;
   background-size: cover;
   background-position: top;
 }
@@ -354,11 +354,17 @@ nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  width: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 85vh;
 }
 
 .imgContainer {
   position: absolute;
+  right: 0;
+  width: 50%;
 }

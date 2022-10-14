@@ -3,7 +3,7 @@
 header {
     background-image: url(../assets/home-header.jpg);
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 85vh;
     background-size: cover;
     background-position: top;
 
@@ -24,9 +24,14 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: right;
+    align-items: left;
+    width: 50%;
+    flex-wrap: wrap;
+    height: 85vh;
 }
 
 .imgContainer {
     position: absolute;
+    right: 0;
+    width: 50%;
 }
