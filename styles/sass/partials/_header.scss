@@ -3,5 +3,16 @@
 header {
     background-image: url(../assets/home-header.jpg);
     background-repeat: no-repeat;
+    display: flex;
+}
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.headerTextFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
