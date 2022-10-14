@@ -321,9 +321,16 @@ section {
 header {
   background-image: url(../assets/home-header.jpg);
   background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+}
+
+.headerFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 nav ul {
@@ -347,4 +354,11 @@ nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+}
+
+.imgContainer {
+  position: absolute;
 }
