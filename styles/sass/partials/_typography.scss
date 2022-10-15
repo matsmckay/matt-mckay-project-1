@@ -15,7 +15,18 @@ p,
 ul {
     margin: 0;
     padding: 0;
-    color: #FFFFFF;
+}
+
+h1 {
+    color: variables.$primary;
+}
+
+h2 {
+    color: variables.$secondary;
+}
+
+h3 {
+    color: variables.$white;
 }
 
 ul {

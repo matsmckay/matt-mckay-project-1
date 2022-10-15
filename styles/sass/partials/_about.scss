@@ -1,1 +1,33 @@
 @use "./variables";
+
+.about {
+    background: variables.$tertiary;
+}
+
+.about ul {
+    display: flex;
+}
+
+.about a {
+    display: flex;
+}
+
+i.destination {
+    line-height: 2.0;
+}
+
+i.community {
+    line-height: 2.0;
+}
+
+i.blog {
+    line-height: 2.0;
+}
+
+i.contact {
+    line-height: 2.0;
+}
+
+p {
+    color: variables.$black;
+}

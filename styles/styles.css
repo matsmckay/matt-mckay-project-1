@@ -291,7 +291,18 @@ p,
 ul {
   margin: 0;
   padding: 0;
-  color: #FFFFFF;
+}
+
+h1 {
+  color: #FDD908;
+}
+
+h2 {
+  color: #0D457F;
+}
+
+h3 {
+  color: #fff;
 }
 
 ul {
@@ -316,6 +327,15 @@ section {
   max-width: 1260px;
   width: 90%;
   margin: 0 auto;
+}
+
+i {
+  background: #FDD908;
+  color: #0D457F;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
 }
 
 header {
@@ -367,4 +387,40 @@ nav ul {
   position: absolute;
   right: 0;
   width: 50%;
+}
+
+.about {
+  background: #EAFEFC;
+}
+
+.about ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+i.destination {
+  line-height: 2;
+}
+
+i.community {
+  line-height: 2;
+}
+
+i.blog {
+  line-height: 2;
+}
+
+i.contact {
+  line-height: 2;
+}
+
+p {
+  color: #000000;
 }
