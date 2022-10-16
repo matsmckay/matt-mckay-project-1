@@ -1,0 +1,66 @@
+@use "./variables";
+
+.aboutProgramLocations {
+    background: variables.$secondary;
+    padding: 0;
+    width: 100%;
+}
+
+.ourProgram {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.ourProgram li {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.topImage {
+    padding-right: 50px;
+}
+
+.ourProgramText {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.newLocations {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.newLocations li {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bottomImage {
+    padding-left: 50px;
+}
+
+.newLocationsText {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newLocationsText {
+    align-items: end;
+}
+
+button {
+    border: none;
+    width: fit-content;
+    margin-top: 20px;
+}

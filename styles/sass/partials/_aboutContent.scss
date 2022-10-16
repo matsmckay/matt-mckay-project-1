@@ -19,8 +19,7 @@
     display: flex;
 }
 
-.aboutContent h2,
-p {
+.aboutContent h2 {
     margin-left: 20px;
 }
 
@@ -49,7 +48,7 @@ i.contact {
     line-height: 2.0;
 }
 
-p {
+.aboutContent p {
     color: variables.$black;
     margin-left: 60px;
 }
