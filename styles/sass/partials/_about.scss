@@ -1,16 +1,37 @@
 @use "./variables";
 
-.about {
+// ABOUTCONTENT STYLES
+
+.aboutContent {
     background: variables.$tertiary;
+    padding-top: 200px;
 }
 
-.about ul {
+.aboutContent {
     display: flex;
 }
 
-.about a {
+.aboutContent li {
+    margin-left: 20px;
+}
+
+.aboutContent a {
     display: flex;
 }
+
+.aboutContent h2,
+p {
+    margin-left: 20px;
+}
+
+.destinations {
+    margin-bottom: 40px;
+}
+
+.commune {
+    margin-bottom: 40px;
+}
+
 
 i.destination {
     line-height: 2.0;
@@ -30,4 +51,5 @@ i.contact {
 
 p {
     color: variables.$black;
+    margin-left: 60px;
 }

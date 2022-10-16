@@ -350,17 +350,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
 }
 
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.headerFlex li {
+  width: 50%;
 }
 
 .headerTextFlex {
@@ -377,32 +370,62 @@ nav ul {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  width: 50%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 85vh;
+  width: 40%;
 }
 
-.imgContainer {
-  position: absolute;
-  right: 0;
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.imgHeaderContainer {
+  position: relative;
   width: 50%;
+  top: 250px;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
 }
 
-.about {
+.aboutContent {
   background: #EAFEFC;
+  padding-top: 200px;
 }
 
-.about ul {
+.aboutContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.about a {
+.aboutContent li {
+  margin-left: 20px;
+}
+
+.aboutContent a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.aboutContent h2,
+p {
+  margin-left: 20px;
+}
+
+.destinations {
+  margin-bottom: 40px;
+}
+
+.commune {
+  margin-bottom: 40px;
 }
 
 i.destination {
@@ -423,4 +446,5 @@ i.contact {
 
 p {
   color: #000000;
+  margin-left: 60px;
 }

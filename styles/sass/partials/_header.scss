@@ -6,32 +6,38 @@ header {
     height: 85vh;
     background-size: cover;
     background-position: top;
-
-
 }
 
 .headerFlex {
     display: flex;
-    position: relative;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: row;
+.headerFlex li {
+    width: 50%;
 }
+
 
 .headerTextFlex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
-    width: 50%;
     flex-wrap: wrap;
-    height: 85vh;
+    width: 40%;
 }
 
-.imgContainer {
-    position: absolute;
-    right: 0;
+// .navFlex {
+//     width: 50%;
+// }
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgHeaderContainer {
+    position: relative;
     width: 50%;
+    top: 250px;
+    align-items: right;
 }
