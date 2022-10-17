@@ -20,10 +20,28 @@
 
 .aboutBannerImage {
     width: 100%;
-    padding-top: 100px;
+    padding: 100px 0;
 
     img {
         width: 100%;
         margin: 0 auto;
     }
+}
+
+.tripLifetime {
+    background: variables.$tertiary;
+    display: flex;
+
+    .tripLifetimeImg {
+        width: 25%;
+
+        img {
+            box-shadow: -15px 15px 1px variables.$primary;
+        }
+    }
+
+    .tripLifetimeText {
+        width: 75%;
+    }
+
 }

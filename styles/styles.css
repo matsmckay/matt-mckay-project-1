@@ -345,7 +345,6 @@ header {
   background-size: cover;
   background-position: top;
   position: relative;
-  border: 1px solid red;
 }
 
 .headerFlex {
@@ -374,8 +373,9 @@ header {
           align-items: left;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 40%;
+  width: 50%;
   height: 80vh;
+  margin-left: 70px;
 }
 
 nav ul {
@@ -390,9 +390,9 @@ nav ul {
 
 .imgHeaderContainer img {
   position: absolute;
-  width: 50vw;
+  width: 57vw;
   height: 80vh;
-  top: 33vh;
+  top: 25vh;
   right: 0;
 }
 
@@ -484,7 +484,7 @@ i.contact {
       -ms-flex-pack: center;
           justify-content: center;
   width: 50%;
-  padding: 0 100px 0 250px;
+  padding: 0 100px 0 50px;
   margin: 150px 0;
 }
 .ourProgramText p {
@@ -506,7 +506,7 @@ i.contact {
       -ms-flex-align: end;
           align-items: end;
   width: 50%;
-  padding: 0 250px 0 100px;
+  padding: 0 50px 0 100px;
   margin: 150px 0;
 }
 .newLocationsText p {
@@ -573,9 +573,26 @@ button {
 
 .aboutBannerImage {
   width: 100%;
-  padding-top: 100px;
+  padding: 100px 0;
 }
 .aboutBannerImage img {
   width: 100%;
   margin: 0 auto;
+}
+
+.tripLifetime {
+  background: #EAFEFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.tripLifetime .tripLifetimeImg {
+  width: 25%;
+}
+.tripLifetime .tripLifetimeImg img {
+  -webkit-box-shadow: -15px 15px 1px #FDD908;
+          box-shadow: -15px 15px 1px #FDD908;
+}
+.tripLifetime .tripLifetimeText {
+  width: 75%;
 }
