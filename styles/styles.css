@@ -399,26 +399,25 @@ nav ul {
 .aboutContent {
   background: #EAFEFC;
   padding-top: 200px;
-}
-
-.aboutContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 125px;
 }
-
 .aboutContent li {
   margin-left: 20px;
 }
-
-.aboutContent a {
+.aboutContent li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.aboutContent h2 {
+.aboutContent li h2 {
   margin-left: 20px;
+}
+.aboutContent li p {
+  color: #000000;
+  margin-left: 60px;
 }
 
 .destinations {
@@ -443,11 +442,6 @@ i.blog {
 
 i.contact {
   line-height: 2;
-}
-
-.aboutContent p {
-  color: #000000;
-  margin-left: 60px;
 }
 
 .aboutProgramLocations {
@@ -490,7 +484,8 @@ i.contact {
       -ms-flex-pack: center;
           justify-content: center;
   width: 50%;
-  padding: 0 100px 0 244px;
+  padding: 0 100px 0 250px;
+  margin: 150px 0;
 }
 .ourProgramText p {
   text-align: justify;
@@ -511,7 +506,8 @@ i.contact {
       -ms-flex-align: end;
           align-items: end;
   width: 50%;
-  padding: 0 244px 0 100px;
+  padding: 0 250px 0 100px;
+  margin: 150px 0;
 }
 .newLocationsText p {
   text-align: justify;
@@ -519,6 +515,13 @@ i.contact {
 
 .topImage {
   width: 50%;
+  position: relative;
+}
+.topImage img {
+  -webkit-box-shadow: 15px 15px 1px #FDD908;
+          box-shadow: 15px 15px 1px #FDD908;
+  position: absolute;
+  bottom: 69px;
 }
 
 .bottomImage {
@@ -529,6 +532,13 @@ i.contact {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  position: relative;
+}
+.bottomImage img {
+  -webkit-box-shadow: -15px 15px 1px #FDD908;
+          box-shadow: -15px 15px 1px #FDD908;
+  position: absolute;
+  top: 69px;
 }
 
 button {
@@ -537,4 +547,35 @@ button {
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 20px;
+}
+
+.aboutCommunity {
+  background: #EAFEFC;
+  padding: 125px 0 50px 0;
+}
+.aboutCommunity .communityWrapper {
+  width: 66.6666666667%;
+  margin: 0 auto;
+}
+
+.vacationDays {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutBannerImage {
+  width: 100%;
+  padding-top: 100px;
+}
+.aboutBannerImage img {
+  width: 100%;
+  margin: 0 auto;
 }
