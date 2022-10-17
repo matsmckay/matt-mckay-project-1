@@ -344,6 +344,8 @@ header {
   height: 85vh;
   background-size: cover;
   background-position: top;
+  position: relative;
+  border: 1px solid red;
 }
 
 .headerFlex {
@@ -373,6 +375,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 40%;
+  height: 80vh;
 }
 
 nav ul {
@@ -385,13 +388,12 @@ nav ul {
           flex-direction: row;
 }
 
-.imgHeaderContainer {
-  position: relative;
-  width: 50%;
-  top: 250px;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
+.imgHeaderContainer img {
+  position: absolute;
+  width: 50vw;
+  height: 80vh;
+  top: 33vh;
+  right: 0;
 }
 
 .aboutContent {
@@ -454,44 +456,21 @@ i.contact {
   width: 100%;
 }
 
+.aboutWrapper {
+  width: 50%;
+}
+
 .ourProgram {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.ourProgram li {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.topImage {
-  padding-right: 50px;
-}
-
-.ourProgramText {
-  padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
 }
 
 .newLocations {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,23 +478,7 @@ i.contact {
       flex-wrap: wrap;
 }
 
-.newLocations li {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.bottomImage {
-  padding-left: 50px;
-}
-
-.newLocationsText {
-  padding: 50px;
+.ourProgramText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,12 +489,46 @@ i.contact {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 50%;
+  padding: 0 100px 0 244px;
+}
+.ourProgramText p {
+  text-align: justify;
 }
 
 .newLocationsText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  width: 50%;
+  padding: 0 244px 0 100px;
+}
+.newLocationsText p {
+  text-align: justify;
+}
+
+.topImage {
+  width: 50%;
+}
+
+.bottomImage {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 button {

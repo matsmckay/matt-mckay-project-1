@@ -6,10 +6,13 @@ header {
     height: 85vh;
     background-size: cover;
     background-position: top;
+    position: relative;
+    border: 1px solid red;
 }
 
 .headerFlex {
     display: flex;
+
 }
 
 .headerFlex li {
@@ -24,6 +27,9 @@ header {
     align-items: left;
     flex-wrap: wrap;
     width: 40%;
+    height: 80vh;
+
+
 }
 
 // .navFlex {
@@ -35,9 +41,12 @@ nav ul {
     flex-direction: row;
 }
 
-.imgHeaderContainer {
-    position: relative;
-    width: 50%;
-    top: 250px;
-    align-items: right;
+.imgHeaderContainer img {
+    position: absolute;
+    width: 50vw;
+    height: 80vh;
+    top: 33vh;
+    right: 0;
+    // top: 250px;
+    // align-items: right;
 }
