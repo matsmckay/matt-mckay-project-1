@@ -4,7 +4,7 @@
 
 .aboutCommunity {
     background: variables.$tertiary;
-    padding: 125px 0 50px 0;
+    padding: 125px 0 0 0;
 
 
     .communityWrapper {
@@ -45,6 +45,7 @@
 .tripLifetime {
     background: variables.$tertiary;
     display: flex;
+    margin-bottom: 100px;
 
     .tripLifetimeImg {
         width: 25%;
@@ -63,4 +64,38 @@
 
     }
 
+}
+
+// Image Gallery
+
+.aboutImageGallery {
+    background: variables.$secondary;
+
+}
+
+.galleryWrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.galleryFlex {
+    display: flex;
+
+    li:nth-child(2) {
+        margin: 75px 30px;
+    }
+
+    li {
+        margin: 75px 0;
+    }
+}
+
+footer {
+
+    background: variables.$primary;
+    padding: 5px 0;
+
+    p {
+        text-align: center;
+    }
 }

@@ -378,6 +378,9 @@ header {
   margin-left: 70px;
 }
 
+nav {
+  padding-top: 75px;
+}
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -551,7 +554,7 @@ button {
 
 .aboutCommunity {
   background: #EAFEFC;
-  padding: 125px 0 50px 0;
+  padding: 125px 0 0 0;
 }
 .aboutCommunity .communityWrapper {
   width: 66.6666666667%;
@@ -590,6 +593,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 100px;
 }
 .tripLifetime .tripLifetimeImg {
   width: 25%;
@@ -611,4 +615,33 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.aboutImageGallery {
+  background: #0D457F;
+}
+
+.galleryWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.galleryFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.galleryFlex li:nth-child(2) {
+  margin: 75px 30px;
+}
+.galleryFlex li {
+  margin: 75px 0;
+}
+
+footer {
+  background: #FDD908;
+  padding: 5px 0;
+}
+footer p {
+  text-align: center;
 }
