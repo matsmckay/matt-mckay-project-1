@@ -329,6 +329,14 @@ section {
   margin: 0 auto;
 }
 
+header {
+  background-repeat: no-repeat;
+  height: 85vh;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
 i {
   background: #FDD908;
   color: #0D457F;
@@ -338,13 +346,8 @@ i {
   border-radius: 50%;
 }
 
-header {
+.headerHome {
   background-image: url(../assets/home-header.jpg);
-  background-repeat: no-repeat;
-  height: 85vh;
-  background-size: cover;
-  background-position: top;
-  position: relative;
 }
 
 .headerFlex {
@@ -644,4 +647,8 @@ footer {
 }
 footer p {
   text-align: center;
+}
+
+.headerBlog {
+  background-image: url(../assets/blog-header.jpg);
 }

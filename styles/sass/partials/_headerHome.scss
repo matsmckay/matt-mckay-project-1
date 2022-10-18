@@ -1,15 +1,11 @@
 @use "./variables";
 
+// !!!!HOME CSS STYLES!!!! 
+
 // HEADER STYLES
 
-header {
+.headerHome {
     background-image: url(../assets/home-header.jpg);
-    background-repeat: no-repeat;
-    height: 85vh;
-    background-size: cover;
-    background-position: top;
-    position: relative;
-
 }
 
 .headerFlex {
