@@ -71,22 +71,21 @@
 .aboutImageGallery {
     background: variables.$secondary;
 
-}
-
-.galleryWrapper {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.galleryFlex {
-    display: flex;
-
-    li:nth-child(2) {
-        margin: 75px 30px;
+    .galleryWrapper {
+        width: 80%;
+        margin: 0 auto;
     }
 
-    li {
-        margin: 75px 0;
+    .galleryFlex {
+        display: flex;
+
+        li:nth-child(2) {
+            margin: 75px 30px;
+        }
+
+        li {
+            margin: 75px 0;
+        }
     }
 }
 

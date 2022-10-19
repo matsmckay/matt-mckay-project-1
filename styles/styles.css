@@ -382,7 +382,7 @@ i {
 }
 
 nav {
-  padding-top: 75px;
+  padding-top: 40px;
 }
 nav ul {
   display: -webkit-box;
@@ -623,21 +623,19 @@ button {
 .aboutImageGallery {
   background: #0D457F;
 }
-
-.galleryWrapper {
+.aboutImageGallery .galleryWrapper {
   width: 80%;
   margin: 0 auto;
 }
-
-.galleryFlex {
+.aboutImageGallery .galleryFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.galleryFlex li:nth-child(2) {
+.aboutImageGallery .galleryFlex li:nth-child(2) {
   margin: 75px 30px;
 }
-.galleryFlex li {
+.aboutImageGallery .galleryFlex li {
   margin: 75px 0;
 }
 
@@ -651,4 +649,36 @@ footer p {
 
 .headerBlog {
   background-image: url(../assets/blog-header.jpg);
+}
+.headerBlog .blogNavFlex {
+  width: 33.3333333333%;
+  height: 60vh;
+}
+.headerBlog .navWrapper {
+  width: 90%;
+  height: 50vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navBlog ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }

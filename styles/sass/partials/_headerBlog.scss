@@ -6,4 +6,33 @@
 
 .headerBlog {
     background-image: url(../assets/blog-header.jpg);
+
+    .blogNavFlex {
+
+        width: calc(100% / 3);
+        height: 60vh;
+        // justify-content: space-between;
+        // margin-left: 70px;
+        // border: 5px solid red;
+        // border: 5px solid red;
+    }
+
+    .navWrapper {
+        width: 90%;
+        height: 50vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        // border: 5px solid green;
+    }
+}
+
+// NAV STYLES
+
+.navBlog ul {
+    display: flex;
+    justify-content: space-between;
 }
