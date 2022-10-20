@@ -349,18 +349,13 @@ i {
 .headerHome {
   background-image: url(../assets/home-header.jpg);
 }
-
-.headerFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.headerFlex li {
+.headerHome .homeNavFlex {
   width: 50%;
 }
-
-.headerTextFlex {
+.headerHome .homeNavFlex .navWrapper {
+  width: 65%;
+  height: 90vh;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,30 +363,19 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 50%;
-  height: 80vh;
-  margin-left: 70px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-nav {
-  padding-top: 40px;
-}
-nav ul {
+.navHome ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .imgHeaderContainer img {
@@ -651,12 +635,11 @@ footer p {
   background-image: url(../assets/blog-header.jpg);
 }
 .headerBlog .blogNavFlex {
-  width: 33.3333333333%;
-  height: 60vh;
+  width: 50%;
 }
-.headerBlog .navWrapper {
-  width: 90%;
-  height: 50vh;
+.headerBlog .blogNavFlex .navWrapper {
+  width: 65%;
+  height: 60vh;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -665,9 +648,6 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: distribute;

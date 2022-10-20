@@ -6,38 +6,35 @@
 
 .headerHome {
     background-image: url(../assets/home-header.jpg);
+
+
+    .homeNavFlex {
+        width: 50%;
+
+        // border: 5px solid hotpink;
+
+
+
+        .navWrapper {
+            width: 65%;
+            height: 90vh;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            // border: 5px solid blue;
+        }
+    }
 }
 
-.headerFlex {
-    display: flex;
 
-}
-
-.headerFlex li {
-    width: 50%;
-}
-
-
-.headerTextFlex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: left;
-    flex-wrap: wrap;
-    width: 50%;
-    height: 80vh;
-    margin-left: 70px;
-}
 
 // NAV STYLES
 
-nav {
-    padding-top: 40px;
-
-    ul {
-        display: flex;
-        flex-direction: row;
-    }
+.navHome ul {
+    display: flex;
+    justify-content: space-between;
 }
 
 // IMG HEADER STYLES

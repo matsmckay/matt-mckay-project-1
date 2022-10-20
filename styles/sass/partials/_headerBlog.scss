@@ -9,24 +9,19 @@
 
     .blogNavFlex {
 
-        width: calc(100% / 3);
-        height: 60vh;
-        // justify-content: space-between;
-        // margin-left: 70px;
-        // border: 5px solid red;
-        // border: 5px solid red;
-    }
+        width: 50%;
 
-    .navWrapper {
-        width: 90%;
-        height: 50vh;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        // border: 5px solid green;
+
+        .navWrapper {
+            width: 65%;
+            height: 60vh;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            // border: 4px solid hotpink;
+        }
     }
 }
 
