@@ -1,0 +1,33 @@
+@use "./variables";
+
+.blog {
+    margin-left: 40px;
+}
+
+.mainBlogImg {
+    box-shadow: -15px 15px 0px variables.$secondary;
+}
+
+.mainBlogText {}
+
+.asideBlog {
+    // background: variables.$secondary;
+
+    // .asideText {
+    //     display: inline;
+    // }
+    margin-top: 80px;
+}
+
+.asideImg {
+    background: variables.$secondary;
+    margin-right: 40px;
+    box-shadow: 15px 0px 0px variables.$secondary;
+}
+
+.asideText {
+    background: variables.$secondary;
+    margin: 0 40px;
+    box-shadow: 15px 0px 0px variables.$secondary;
+
+}
