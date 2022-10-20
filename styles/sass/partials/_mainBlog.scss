@@ -1,0 +1,7 @@
+@use "./variables";
+
+.mainBlog {
+    display: flex;
+    padding: 0;
+    background: variables.$tertiary;
+}

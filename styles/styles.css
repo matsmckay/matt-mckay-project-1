@@ -287,6 +287,8 @@ h1 {
 h1,
 h2,
 h3,
+h4,
+h5,
 p,
 ul {
   margin: 0;
@@ -560,6 +562,9 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.vacationDays h4 {
+  padding-bottom: 20px;
+}
 
 .aboutBannerImage {
   width: 100%;
@@ -661,4 +666,39 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.mainBlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  background: #EAFEFC;
+}
+
+.blog {
+  margin-left: 40px;
+}
+
+.mainBlogImg {
+  -webkit-box-shadow: -15px 15px 0px #0D457F;
+          box-shadow: -15px 15px 0px #0D457F;
+}
+
+.asideBlog {
+  margin-top: 80px;
+}
+
+.asideImg {
+  background: #0D457F;
+  margin-right: 40px;
+  -webkit-box-shadow: 15px 0px 0px #0D457F;
+          box-shadow: 15px 0px 0px #0D457F;
+}
+
+.asideText {
+  background: #0D457F;
+  margin: 0 40px;
+  -webkit-box-shadow: 15px 0px 0px #0D457F;
+          box-shadow: 15px 0px 0px #0D457F;
 }
