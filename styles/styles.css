@@ -677,28 +677,69 @@ footer p {
 }
 
 .blog {
-  margin-left: 40px;
+  margin-left: 92px;
+  position: relative;
+  width: 75%;
 }
 
 .mainBlogImg {
-  -webkit-box-shadow: -15px 15px 0px #0D457F;
-          box-shadow: -15px 15px 0px #0D457F;
+  -webkit-box-shadow: -15px 15px 0px #FDD908;
+          box-shadow: -15px 15px 0px #FDD908;
+  position: absolute;
+  top: -160px;
+  left: 15px;
+}
+
+.mainBlogText {
+  border-bottom: 4px solid #FDD908;
+  border-left: 4px solid #FDD908;
+  padding: 500px 100px 80px;
+}
+.mainBlogText h2 {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+.mainBlogText p {
+  padding-bottom: 25px;
 }
 
 .asideBlog {
   margin-top: 80px;
+  width: 33.3333333333%;
 }
 
-.asideImg {
+.asideImg img {
   background: #0D457F;
-  margin-right: 40px;
   -webkit-box-shadow: 15px 0px 0px #0D457F;
           box-shadow: 15px 0px 0px #0D457F;
 }
 
 .asideText {
-  background: #0D457F;
-  margin: 0 40px;
+  margin-left: 83px;
+}
+.asideText .asideTextMission {
   -webkit-box-shadow: 15px 0px 0px #0D457F;
           box-shadow: 15px 0px 0px #0D457F;
+  background: #0D457F;
+  padding: 30px 50px 40px 20px;
+}
+.asideText .asideTextMission h5 {
+  padding-bottom: 10px;
+}
+.asideText .asideTextPosts {
+  -webkit-box-shadow: 15px 0px 0px #0D457F;
+          box-shadow: 15px 0px 0px #0D457F;
+  background: #0D457F;
+  padding: 40px 50px 30px 20px;
+}
+.asideText .asideTextPosts h5 {
+  padding-bottom: 10px;
+}
+.asideText .asideTextPosts ul {
+  list-style: inside;
+}
+
+.mainBlogComments {
+  width: 75%;
+  background: #EAFEFC;
 }

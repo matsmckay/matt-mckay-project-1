@@ -5,3 +5,40 @@
     padding: 0;
     background: variables.$tertiary;
 }
+
+// .blogComments {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: end;
+// }
+
+
+
+.blog {
+    margin-left: 92px;
+    position: relative;
+    width: 75%;
+}
+
+.mainBlogImg {
+    box-shadow: -15px 15px 0px variables.$primary;
+    position: absolute;
+    top: -160px;
+    left: 15px;
+}
+
+.mainBlogText {
+    border-bottom: 4px solid variables.$primary;
+    border-left: 4px solid variables.$primary;
+    padding: 500px 100px 80px;
+
+    h2 {
+        padding-top: 50px;
+        padding-bottom: 25px;
+
+    }
+
+    p {
+        padding-bottom: 25px;
+    }
+}
