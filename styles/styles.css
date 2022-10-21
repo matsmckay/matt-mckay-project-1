@@ -782,3 +782,26 @@ footer p {
 .blogTextWrapper p {
   padding-left: 10px;
 }
+
+.formInputFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.formInputFlex .inputFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.formInputFlex .inputFlex input {
+  border-bottom: 2px solid #FDD908;
+}
+
+textarea {
+  border: 2px solid #FDD908;
+}

@@ -131,10 +131,33 @@
                     <!-- END .blogPostListText -->
                 </div>
                 <!-- END .blogPostLisa -->
+                <form action="#" method="#" class=myForm name="myForm">
+                    <div class="formInputFlex">
+                        <div class="inputFlex firstLastName">
+                            <label for="userName">Name</label>
+                            <input type="text" id="userName" name="userName" required="true"
+                                placeholder="e.g. Mike Smith">
+                        </div>
+                        <div class="inputFlex emailAddress">
+                            <label for="email">Email address</label>
+                            <input type="text" id="email" name="email" required="true" placeholder="me@email.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="comments"></label>
+                        <textarea name="userComments" id="comments" cols="30" rows="10" placeholder="Comment"
+                            required="true" minlength="10" maxlength="200">
+                    </textarea>
+
+                    </div>
+                    <button type="postComment">Post Comment</button>
+                </form>
             </div>
             <!-- END .blogWrapper -->
+
         </section>
         <!-- END SECTION .mainBlogComments -->
+
     </main>
 </body>
 
