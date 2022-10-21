@@ -1,6 +1,43 @@
 @use "./variables";
 
 .mainBlogComments {
-    width: 75%;
+    display: flex;
     background: variables.$tertiary;
+    flex-direction: column;
+    align-items: end;
+    padding: 0;
+
+    h3 {
+        padding-bottom: 20px;
+
+    }
+}
+
+.blogWrapper {
+    width: 64.5%;
+    padding: 50px 75px;
+
+}
+
+.blogPost {
+    // width: 50%;
+    display: flex;
+    padding-bottom: 100px;
+
+    img {
+        padding-right: 15px;
+    }
+}
+
+.blogTextWrapper {
+    width: 95%;
+
+    h4 {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    p {
+        padding-left: 10px;
+    }
 }
