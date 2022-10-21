@@ -1,0 +1,6 @@
+@use "./variables";
+
+.mainBlogComments {
+    width: 75%;
+    background: variables.$tertiary;
+}

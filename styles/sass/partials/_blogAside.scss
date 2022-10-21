@@ -1,33 +1,48 @@
 @use "./variables";
 
-.blog {
-    margin-left: 40px;
-}
 
-.mainBlogImg {
-    box-shadow: -15px 15px 0px variables.$secondary;
-}
-
-.mainBlogText {}
 
 .asideBlog {
-    // background: variables.$secondary;
-
-    // .asideText {
-    //     display: inline;
-    // }
     margin-top: 80px;
+    width: calc(100% / 3);
 }
 
 .asideImg {
-    background: variables.$secondary;
-    margin-right: 40px;
-    box-shadow: 15px 0px 0px variables.$secondary;
+    // margin-right: 40px;
+
+    img {
+        background: variables.$secondary;
+        box-shadow: 15px 0px 0px variables.$secondary;
+
+    }
+
 }
 
 .asideText {
-    background: variables.$secondary;
-    margin: 0 40px;
-    box-shadow: 15px 0px 0px variables.$secondary;
+    margin-left: 83px;
 
+
+    .asideTextMission {
+        box-shadow: 15px 0px 0px variables.$secondary;
+        background: variables.$secondary;
+        padding: 30px 50px 40px 20px;
+
+        h5 {
+            padding-bottom: 10px;
+        }
+    }
+
+    .asideTextPosts {
+        box-shadow: 15px 0px 0px variables.$secondary;
+        background: variables.$secondary;
+        padding: 40px 50px 30px 20px;
+
+        h5 {
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style: inside;
+        }
+    }
 }
