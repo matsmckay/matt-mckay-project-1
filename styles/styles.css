@@ -339,13 +339,70 @@ header {
   position: relative;
 }
 
+.navListFlex {
+  width: 50%;
+}
+.navListFlex .navWrapper {
+  width: 70%;
+  height: 60vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.navListFlex .navWrapper nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navListFlex .navWrapper h1 {
+  text-align: left;
+}
+
 i {
-  background: #FDD908;
   color: #0D457F;
-  width: 40px;
-  height: 40px;
+}
+
+.formInputFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.formInputFlex .inputFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.formInputFlex .inputFlex input {
+  border-bottom: 2px solid #FDD908;
+}
+
+textarea {
+  border: 2px solid #FDD908;
+}
+
+footer {
+  background: #FDD908;
+  padding: 5px 0;
+}
+footer p {
   text-align: center;
-  border-radius: 50%;
 }
 
 .headerHome {
@@ -403,6 +460,13 @@ i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.aboutContent li a i {
+  background: #FDD908;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
 }
 .aboutContent li h2 {
   margin-left: 20px;
@@ -628,14 +692,6 @@ button {
   margin: 75px 0;
 }
 
-footer {
-  background: #FDD908;
-  padding: 5px 0;
-}
-footer p {
-  text-align: center;
-}
-
 .headerBlog {
   background-image: url(../assets/blog-header.jpg);
 }
@@ -783,13 +839,26 @@ footer p {
   padding-left: 10px;
 }
 
-.formInputFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
+.blogInput {
+  background: #EAFEFC;
 }
-.formInputFlex .inputFlex {
+
+.formBlog {
+  background: #EAFEFC;
+}
+
+.headerContact {
+  background-image: url(../assets/contact-header.jpg);
+}
+
+.contactMain {
+  background: #EAFEFC;
+  padding: 0;
+  position: relative;
+}
+
+.contactInfo {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -798,10 +867,30 @@ footer p {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.formInputFlex .inputFlex input {
-  border-bottom: 2px solid #FDD908;
+
+.contactWrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.contactWrapper .contactSocialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 15px;
+}
+.contactWrapper .contactEmail {
+  padding-bottom: 20px;
 }
 
-textarea {
-  border: 2px solid #FDD908;
+.myFormContact {
+  position: absolute;
+}
+
+.formContact {
+  background: #0D457F;
+}
+
+.contactInput {
+  background: #0D457F;
 }

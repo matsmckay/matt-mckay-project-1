@@ -1,0 +1,14 @@
+@use "./variables";
+
+.myFormContact {
+    position: absolute;
+}
+
+.formContact {
+    background: variables.$secondary;
+
+}
+
+.contactInput {
+    background: variables.$secondary;
+}

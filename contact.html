@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Boat Ride Adventures</title>
+    <script src="https://kit.fontawesome.com/ed617cac6d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <!-- skip link -->
+    <a href="#mainContent" class="skipLink">Skip to the main content</a>
+    <!-- HEADER BEGINS -->
+    <header class="headerContact">
+        <div class="navListFlex">
+            <!-- NAV BEGINS -->
+            <div class="navWrapper">
+                <nav>
+                    <ul class="navFlex">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- NAV ENDS -->
+                <h1>Get In Touch</h1>
+            </div>
+            <!-- .navWrapper -->
+        </div>
+        <!-- END .navListFlex -->
+    </header>
+    <main id="mainContent">
+        <section class="contactMain">
+            <div class="contactInfo">
+                <div class="contactWrapper">
+                    <ul class="contactSocialMedia">
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                    <div class="contactEmail">
+                        <p>info@email.com</p>
+                    </div>
+                    <div class="contactAddress">
+                        <p>123 - 456 - 7890</p>
+                        <p>123 Queen Street West, Unit 10</p>
+                        <p>Toronto, Ontario</p>
+                        <p>M5V2D5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="#" method="#" class=myFormContact name="myFormContact">
+                    <div class="formInputFlex">
+                        <div class="inputFlex firstLastName">
+                            <label for="userName">Name</label>
+                            <input class="contactInput" type="text" id="userName" name="userName" required="true"
+                                placeholder="e.g. Mike Smith">
+                        </div>
+                        <!-- END .inputFlex .firstLastName -->
+                        <div class="inputFlex emailAddress">
+                            <label for="email">Email address</label>
+                            <input class="contactInput" type="text" id="email" name="email" required="true"
+                                placeholder="me@email.com">
+                        </div>
+                        <!-- END .inputFlex emailAddress -->
+                    </div>
+                    <!-- END .formInputFlex -->
+                    <div class="formComments">
+                        <label for="comments"></label>
+                        <textarea class="formContact" name="userComments" id="comments" cols="30" rows="10"
+                            placeholder="Comment" required="true" minlength="10" maxlength="200">
+                            </textarea>
+                    </div>
+                    <!-- END .formComments -->
+                    <button type="postComment">Post Comment</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+</body>
+<footer>
+    <p>Copyright 2019 HackerYou</p>
+</footer>
+
+</html>
