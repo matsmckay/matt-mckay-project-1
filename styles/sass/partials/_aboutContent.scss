@@ -14,6 +14,14 @@
 
         a {
             display: flex;
+
+            i {
+                background: variables.$primary;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                border-radius: 50%;
+            }
         }
 
         h2 {

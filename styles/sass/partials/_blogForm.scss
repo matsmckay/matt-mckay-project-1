@@ -1,23 +1,9 @@
 @use "./variables";
 
-.formInputFlex {
-    display: flex;
-    width: 100%;
-
-
-    .inputFlex {
-        display: flex;
-        flex-direction: column;
-
-        input {
-            border-bottom: 2px solid variables.$primary;
-
-        }
-    }
+.blogInput {
+    background: variables.$tertiary;
 }
 
-
-
-textarea {
-    border: 2px solid variables.$primary;
+.formBlog {
+    background: variables.$tertiary;
 }

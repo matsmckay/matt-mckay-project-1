@@ -1,0 +1,28 @@
+@use "./variables";
+
+.contactMain {
+    background: variables.$tertiary;
+    padding: 0;
+    position: relative;
+}
+
+.contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactWrapper {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 100px;
+
+    .contactSocialMedia {
+        display: flex;
+        padding-bottom: 15px;
+    }
+
+    .contactEmail {
+        padding-bottom: 20px;
+    }
+}

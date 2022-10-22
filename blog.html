@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Boat Ride Adventures Blog!</title>
+    <title>Blog - Boat Ride Adventures</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -14,10 +14,10 @@
     <a href="#mainContent" class="skipLink">Skip to the main content</a>
     <!-- HEADER BEGINS -->
     <header class="headerBlog">
-        <div class="blogNavFlex">
+        <div class="navListFlex">
             <!-- NAV BEGINS -->
             <div class="navWrapper">
-                <nav class="navBlog">
+                <nav>
                     <ul class="navFlex">
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -30,7 +30,7 @@
             </div>
             <!-- .navWrapper -->
         </div>
-        <!-- END .blogNavFlex -->
+        <!-- END .navListFlex -->
     </header>
     <!-- MAIN SECTION BEGINS -->
     <main id="mainContent">
@@ -131,27 +131,33 @@
                     <!-- END .blogPostListText -->
                 </div>
                 <!-- END .blogPostLisa -->
-                <form action="#" method="#" class=myForm name="myForm">
+                <form action="#" method="#" class=myFormBlog name="myForm">
                     <div class="formInputFlex">
                         <div class="inputFlex firstLastName">
                             <label for="userName">Name</label>
-                            <input type="text" id="userName" name="userName" required="true"
+                            <input class="blogInput" type="text" id="userName" name="userName" required="true"
                                 placeholder="e.g. Mike Smith">
                         </div>
+                        <!-- END .inputFlex .firstLastName -->
                         <div class="inputFlex emailAddress">
                             <label for="email">Email address</label>
-                            <input type="text" id="email" name="email" required="true" placeholder="me@email.com">
+                            <input class="blogInput" type="text" id="email" name="email" required="true"
+                                placeholder="me@email.com">
                         </div>
+                        <!-- END .inputFlex emailAddress -->
                     </div>
-                    <div>
+                    <!-- END .formInputFlex -->
+                    <div class="formComments">
                         <label for="comments"></label>
-                        <textarea name="userComments" id="comments" cols="30" rows="10" placeholder="Comment"
-                            required="true" minlength="10" maxlength="200">
-                    </textarea>
+                        <textarea class="formBlog" name="userComments" id="comments" cols="30" rows="10"
+                            placeholder="Comment" required="true" minlength="10" maxlength="200">
+                            </textarea>
 
                     </div>
+                    <!-- END .formComments -->
                     <button type="postComment">Post Comment</button>
                 </form>
+                <!-- END .myFormBlog -->
             </div>
             <!-- END .blogWrapper -->
 
@@ -159,6 +165,10 @@
         <!-- END SECTION .mainBlogComments -->
 
     </main>
+    <!-- END MAIN SECTION -->
 </body>
+<footer>
+    <p>Copyright 2019 HackerYou</p>
+</footer>
 
 </html>
