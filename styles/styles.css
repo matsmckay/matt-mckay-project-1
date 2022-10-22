@@ -281,7 +281,31 @@ html {
 }
 
 h1 {
+  font-family: "IM Fell English", serif;
   font-size: 3.95rem;
+  text-transform: uppercase;
+  color: #FDD908;
+}
+
+h2 {
+  font-family: "IM Fell English", serif;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  color: #0D457F;
+}
+
+h3 {
+  font-family: "IM Fell English", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #EAFEFC;
+}
+
+h4 {
+  font-family: "IM Fell English", serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #FDD908;
 }
 
 h1,
@@ -293,18 +317,6 @@ p,
 ul {
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  color: #FDD908;
-}
-
-h2 {
-  color: #0D457F;
-}
-
-h3 {
-  color: #fff;
 }
 
 ul {
@@ -872,6 +884,7 @@ button {
   width: 70%;
   margin: 0 auto;
   padding-top: 100px;
+  padding-bottom: 200px;
 }
 .contactWrapper .contactSocialMedia {
   display: -webkit-box;
@@ -879,12 +892,18 @@ button {
   display: flex;
   padding-bottom: 15px;
 }
+.contactWrapper .contactSocialMedia li {
+  padding-right: 22px;
+}
 .contactWrapper .contactEmail {
   padding-bottom: 20px;
 }
 
 .myFormContact {
   position: absolute;
+  top: -115px;
+  right: 273px;
+  background: #0D457F;
 }
 
 .formContact {

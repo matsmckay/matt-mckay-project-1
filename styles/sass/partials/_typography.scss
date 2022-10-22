@@ -5,8 +5,34 @@ html {
 }
 
 h1 {
+    font-family: 'IM Fell English', serif;
     font-size: 3.95rem;
+    text-transform: uppercase;
+    color: variables.$primary;
 }
+
+h2 {
+    font-family: 'IM Fell English', serif;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    color: variables.$secondary;
+}
+
+h3 {
+    font-family: 'IM Fell English', serif;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    color: variables.$tertiary;
+}
+
+h4 {
+    font-family: 'IM Fell English', serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: variables.$primary;
+}
+
+
 
 h1,
 h2,
@@ -17,18 +43,6 @@ p,
 ul {
     margin: 0;
     padding: 0;
-}
-
-h1 {
-    color: variables.$primary;
-}
-
-h2 {
-    color: variables.$secondary;
-}
-
-h3 {
-    color: variables.$white;
 }
 
 ul {

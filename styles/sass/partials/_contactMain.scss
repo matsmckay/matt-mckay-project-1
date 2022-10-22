@@ -16,10 +16,15 @@
     width: 70%;
     margin: 0 auto;
     padding-top: 100px;
+    padding-bottom: 200px;
 
     .contactSocialMedia {
         display: flex;
         padding-bottom: 15px;
+
+        li {
+            padding-right: 22px;
+        }
     }
 
     .contactEmail {
