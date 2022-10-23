@@ -1,27 +1,19 @@
 @use "./variables";
 
 @media (max-width: 1250px) {
-    h1 {
-        font-size: 3.5rem;
-    }
+    // h1 {
+    //     font-size: 3.5rem;
+    // }
 
     h2 {
         font-size: 2.0rem;
     }
-
-    .imgHeaderContainer img {
-        position: absolute;
-        width: 57vw;
-        height: 60vh;
-        top: 40vh;
-        right: 0;
-    }
 }
 
 @media (max-width: 1120px) {
-    h1 {
-        font-size: 3rem;
-    }
+    // h1 {
+    //     font-size: 3rem;
+    // }
 
     h2 {
         font-size: 1.75rem;
@@ -29,5 +21,36 @@
 
     h3 {
         font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 884px) {
+
+    header {
+        height: 60vh;
+    }
+
+    .imgHeaderContainer img {
+        display: none;
+    }
+
+    .navListFlex {
+        width: 100%;
+
+        .navWrapper {
+            padding-bottom: 0;
+            width: 100%;
+            justify-content: flex-start;
+
+            nav ul {
+                justify-content: space-around;
+            }
+        }
+
+    }
+
+    h1 {
+        align-self: center;
+        padding-top: 183px;
     }
 }

@@ -282,7 +282,7 @@ html {
 
 h1 {
   font-family: "IM Fell English", serif;
-  font-size: 3.95rem;
+  font-size: clamp(0.7rem, 6vw, 4.5rem);
   text-transform: uppercase;
   color: #fff;
 }
@@ -364,10 +364,11 @@ header {
 
 .navListFlex {
   width: 50%;
+  height: 100%;
 }
 .navListFlex .navWrapper {
   width: 80%;
-  height: 60vh;
+  height: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,10 +377,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .navListFlex .navWrapper nav ul {
   display: -webkit-box;
@@ -454,10 +454,10 @@ footer p {
   background-image: url(../assets/home-header.jpg);
 }
 .headerHome .navWrapper {
-  height: 100vh;
+  padding-bottom: 75px;
 }
-.headerHome .navFlex {
-  width: 70%;
+nav {
+  padding-top: 75px;
 }
 
 h1 {
@@ -466,10 +466,9 @@ h1 {
 
 .imgHeaderContainer img {
   position: absolute;
-  width: 57vw;
-  height: 80vh;
-  top: 25vh;
+  width: 50%;
   right: 0;
+  bottom: -24px;
 }
 
 .aboutContent {
@@ -904,28 +903,42 @@ i.contact {
 }
 
 @media (max-width: 1250px) {
-  h1 {
-    font-size: 3.5rem;
-  }
   h2 {
     font-size: 2rem;
   }
-  .imgHeaderContainer img {
-    position: absolute;
-    width: 57vw;
-    height: 60vh;
-    top: 40vh;
-    right: 0;
-  }
 }
 @media (max-width: 1120px) {
-  h1 {
-    font-size: 3rem;
-  }
   h2 {
     font-size: 1.75rem;
   }
   h3 {
     font-size: 1.8rem;
+  }
+}
+@media (max-width: 884px) {
+  header {
+    height: 60vh;
+  }
+  .imgHeaderContainer img {
+    display: none;
+  }
+  .navListFlex {
+    width: 100%;
+  }
+  .navListFlex .navWrapper {
+    padding-bottom: 0;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .navListFlex .navWrapper nav ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  h1 {
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding-top: 183px;
   }
 }

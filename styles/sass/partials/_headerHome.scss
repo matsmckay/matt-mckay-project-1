@@ -8,12 +8,17 @@
     background-image: url(../assets/home-header.jpg);
 
     .navWrapper {
-        height: 100vh;
+        // height: 100vh;
+        padding-bottom: 75px;
     }
 
     .navFlex {
-        width: 70%;
+        // width: 70%;
     }
+}
+
+nav {
+    padding-top: 75px;
 }
 
 // NAV STYLES
@@ -24,8 +29,9 @@ h1 {
 
 .imgHeaderContainer img {
     position: absolute;
-    width: 57vw;
-    height: 80vh;
-    top: 25vh;
+    width: 50%;
+    // height: 80vh;
+    // top: 25vh;
     right: 0;
+    bottom: -24px;
 }
