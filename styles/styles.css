@@ -366,7 +366,7 @@ header {
   width: 50%;
 }
 .navListFlex .navWrapper {
-  width: 70%;
+  width: 80%;
   height: 60vh;
   margin: 0 auto;
   display: -webkit-box;
@@ -452,6 +452,12 @@ footer p {
 
 .headerHome {
   background-image: url(../assets/home-header.jpg);
+}
+.headerHome .navWrapper {
+  height: 100vh;
+}
+.headerHome .navFlex {
+  width: 70%;
 }
 
 h1 {
@@ -895,4 +901,31 @@ i.contact {
 
 .contactInput {
   background: #0D457F;
+}
+
+@media (max-width: 1250px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .imgHeaderContainer img {
+    position: absolute;
+    width: 57vw;
+    height: 60vh;
+    top: 40vh;
+    right: 0;
+  }
+}
+@media (max-width: 1120px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
 }

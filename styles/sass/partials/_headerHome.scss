@@ -6,6 +6,14 @@
 
 .headerHome {
     background-image: url(../assets/home-header.jpg);
+
+    .navWrapper {
+        height: 100vh;
+    }
+
+    .navFlex {
+        width: 70%;
+    }
 }
 
 // NAV STYLES
