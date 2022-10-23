@@ -8,19 +8,14 @@
 }
 
 .asideImg {
-    // margin-right: 40px;
-
     img {
         background: variables.$secondary;
         box-shadow: 15px 0px 0px variables.$secondary;
-
     }
-
 }
 
 .asideText {
     margin-left: 83px;
-
 
     .asideTextMission {
         box-shadow: 15px 0px 0px variables.$secondary;

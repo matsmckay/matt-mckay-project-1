@@ -31,6 +31,16 @@ header {
         nav ul {
             display: flex;
             justify-content: space-between;
+
+            a {
+                color: variables.$white;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1rem;
+                font-weight: 700;
+                line-height: 29px;
+                letter-spacing: 1px;
+
+            }
         }
 
         h1 {
@@ -68,10 +78,23 @@ textarea {
     border: 2px solid variables.$primary;
 }
 
+button {
+    border: none;
+    width: fit-content;
+    margin-top: 20px;
+    background: variables.$primary;
+    color: variables.$secondary;
+    font-family: 'IM Fell English', serif;
+    line-height: 41.6px;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
 footer {
 
     background: variables.$primary;
     padding: 5px 0;
+
 
     p {
         text-align: center;

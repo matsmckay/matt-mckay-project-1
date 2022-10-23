@@ -6,26 +6,4 @@
 
 .headerBlog {
     background-image: url(../assets/blog-header.jpg);
-
-    .blogNavFlex {
-        width: 50%;
-
-        .navWrapper {
-            width: 65%;
-            height: 60vh;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            // border: 4px solid hotpink;
-        }
-    }
-}
-
-// NAV STYLES
-
-.navBlog ul {
-    display: flex;
-    justify-content: space-between;
 }

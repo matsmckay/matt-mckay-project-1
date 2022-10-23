@@ -8,7 +8,7 @@ h1 {
     font-family: 'IM Fell English', serif;
     font-size: 3.95rem;
     text-transform: uppercase;
-    color: variables.$primary;
+    color: variables.$white;
 }
 
 h2 {
@@ -16,6 +16,7 @@ h2 {
     font-size: 2.25rem;
     text-transform: uppercase;
     color: variables.$secondary;
+    line-height: 99.8px;
 }
 
 h3 {
@@ -23,6 +24,8 @@ h3 {
     font-size: 2.0rem;
     text-transform: uppercase;
     color: variables.$tertiary;
+    line-height: 58px;
+    letter-spacing: 1.3px;
 }
 
 h4 {
@@ -32,6 +35,14 @@ h4 {
     color: variables.$primary;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: variables.$black;
+    line-height: 28px;
+    letter-spacing: 1px;
+
+}
 
 
 h1,

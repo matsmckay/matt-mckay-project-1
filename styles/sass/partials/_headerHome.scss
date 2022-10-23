@@ -6,33 +6,13 @@
 
 .headerHome {
     background-image: url(../assets/home-header.jpg);
-
-    .homeNavFlex {
-        width: 50%;
-
-        .navWrapper {
-            width: 65%;
-            height: 90vh;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            // border: 5px solid blue;
-        }
-    }
 }
-
-
 
 // NAV STYLES
 
-.navHome ul {
-    display: flex;
-    justify-content: space-between;
+h1 {
+    color: variables.$primary;
 }
-
-// IMG HEADER STYLES
 
 .imgHeaderContainer img {
     position: absolute;

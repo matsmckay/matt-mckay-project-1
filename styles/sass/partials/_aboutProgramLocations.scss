@@ -14,14 +14,12 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
 }
 
 .newLocations {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .ourProgramText {
@@ -29,11 +27,12 @@
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    padding: 0 100px 0 50px;
-    margin: 150px 0;
+    padding: 0 100px 0 100px;
+    margin: 100px 0;
 
     p {
         text-align: justify;
+        color: variables.$white;
     }
 }
 
@@ -43,11 +42,12 @@
     justify-content: center;
     align-items: end;
     width: 50%;
-    padding: 0 50px 0 100px;
-    margin: 150px 0;
+    padding: 0 100px 0 100px;
+    margin: 100px 0;
 
     p {
         text-align: justify;
+        color: variables.$white;
     }
 }
 
@@ -58,30 +58,22 @@
     img {
         box-shadow: 15px 15px 1px variables.$primary;
         position: absolute;
-        bottom: 69px;
+        bottom: 80px;
+        max-width: 85%;
     }
 }
 
 .bottomImage {
-    // padding-left: 50px;
-    // border: 5px solid pink;
     width: 50%;
     display: flex;
     justify-content: end;
     position: relative;
 
-    // margin: 0 auto;
-    // padding: 0 auto;
-
     img {
         box-shadow: -15px 15px 1px variables.$primary;
         position: absolute;
-        top: 69px;
+        top: 80px;
+        max-width: 85%;
     }
-}
 
-button {
-    border: none;
-    width: fit-content;
-    margin-top: 20px;
 }
