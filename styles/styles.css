@@ -282,14 +282,14 @@ html {
 
 h1 {
   font-family: "IM Fell English", serif;
-  font-size: clamp(0.7rem, 6vw, 4.5rem);
+  font-size: clamp(0.9rem, 6vw, 4.5rem);
   text-transform: uppercase;
   color: #fff;
 }
 
 h2 {
   font-family: "IM Fell English", serif;
-  font-size: 2.25rem;
+  font-size: clamp(0.8rem, 3vw, 2.25rem);
   text-transform: uppercase;
   color: #0D457F;
   line-height: 99.8px;
@@ -297,7 +297,7 @@ h2 {
 
 h3 {
   font-family: "IM Fell English", serif;
-  font-size: 2rem;
+  font-size: clamp(0.8rem, 3vw, 2rem);
   text-transform: uppercase;
   color: #EAFEFC;
   line-height: 58px;
@@ -567,8 +567,8 @@ i.contact {
       -ms-flex-pack: center;
           justify-content: center;
   width: 50%;
-  padding: 0 100px 0 100px;
-  margin: 100px 0;
+  padding: 0 100px 25px 100px;
+  margin: 50px 0 25px 0;
 }
 .ourProgramText p {
   text-align: justify;
@@ -590,8 +590,8 @@ i.contact {
       -ms-flex-align: end;
           align-items: end;
   width: 50%;
-  padding: 0 100px 0 100px;
-  margin: 100px 0;
+  padding: 25px 100px 0 100px;
+  margin: 25px 0 50px 0;
 }
 .newLocationsText p {
   text-align: justify;
@@ -606,8 +606,8 @@ i.contact {
   -webkit-box-shadow: 15px 15px 1px #FDD908;
           box-shadow: 15px 15px 1px #FDD908;
   position: absolute;
-  bottom: 80px;
-  max-width: 85%;
+  top: -25px;
+  width: 85%;
 }
 
 .bottomImage {
@@ -624,8 +624,8 @@ i.contact {
   -webkit-box-shadow: -15px 15px 1px #FDD908;
           box-shadow: -15px 15px 1px #FDD908;
   position: absolute;
-  top: 80px;
-  max-width: 85%;
+  bottom: -25px;
+  width: 85%;
 }
 
 .aboutCommunity {
@@ -662,7 +662,7 @@ i.contact {
   margin: 0 auto;
 }
 
-.tripLifeTimeWrapper {
+Trip of Lifetime CSS .tripLifeTimeWrapper {
   width: 80%;
   margin: 0 auto;
 }
@@ -673,6 +673,8 @@ i.contact {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .tripLifetime .tripLifetimeImg {
   width: 25%;
@@ -902,20 +904,13 @@ i.contact {
   background: #0D457F;
 }
 
-@media (max-width: 1250px) {
-  h2 {
-    font-size: 2rem;
+@media (max-width: 1150px) {
+  .aboutProgramLocations img {
+    top: 50px;
+    bottom: 0;
   }
 }
-@media (max-width: 1120px) {
-  h2 {
-    font-size: 1.75rem;
-  }
-  h3 {
-    font-size: 1.8rem;
-  }
-}
-@media (max-width: 884px) {
+@media (max-width: 900px) {
   header {
     height: 60vh;
   }
@@ -940,5 +935,34 @@ i.contact {
     -ms-flex-item-align: center;
         align-self: center;
     padding-top: 183px;
+  }
+  .aboutProgramLocations img .aboutText {
+    padding: 0 50px;
+    margin: 75px 0;
+  }
+  .aboutProgramLocations img .aboutText img {
+    top: 75px;
+    bottom: 0;
+  }
+  .tripLifetime {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tripLifetime .tripLifetimeImg {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

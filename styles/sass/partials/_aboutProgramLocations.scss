@@ -27,8 +27,8 @@
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    padding: 0 100px 0 100px;
-    margin: 100px 0;
+    padding: 0 100px 25px 100px;
+    margin: 50px 0 25px 0;
 
     p {
         text-align: justify;
@@ -42,8 +42,8 @@
     justify-content: center;
     align-items: end;
     width: 50%;
-    padding: 0 100px 0 100px;
-    margin: 100px 0;
+    padding: 25px 100px 0 100px;
+    margin: 25px 0 50px 0;
 
     p {
         text-align: justify;
@@ -58,8 +58,8 @@
     img {
         box-shadow: 15px 15px 1px variables.$primary;
         position: absolute;
-        bottom: 80px;
-        max-width: 85%;
+        top: -25px;
+        width: 85%;
     }
 }
 
@@ -72,8 +72,8 @@
     img {
         box-shadow: -15px 15px 1px variables.$primary;
         position: absolute;
-        top: 80px;
-        max-width: 85%;
+        bottom: -25px;
+        width: 85%;
     }
 
 }

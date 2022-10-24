@@ -7,14 +7,14 @@ html {
 h1 {
     font-family: 'IM Fell English', serif;
     // font-size: 3.95rem;
-    font-size: clamp(0.7rem, 6vw, 4.5rem);
+    font-size: clamp(0.9rem, 6vw, 4.5rem);
     text-transform: uppercase;
     color: variables.$white;
 }
 
 h2 {
     font-family: 'IM Fell English', serif;
-    font-size: 2.25rem;
+    font-size: clamp(0.8rem, 3vw, 2.25rem);
     text-transform: uppercase;
     color: variables.$secondary;
     line-height: 99.8px;
@@ -22,7 +22,7 @@ h2 {
 
 h3 {
     font-family: 'IM Fell English', serif;
-    font-size: 2.0rem;
+    font-size: clamp(0.8rem, 3vw, 2.0rem);
     text-transform: uppercase;
     color: variables.$tertiary;
     line-height: 58px;
