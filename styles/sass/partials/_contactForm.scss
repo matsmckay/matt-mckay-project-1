@@ -1,17 +1,27 @@
 @use "./variables";
 
-.myFormContact {
+
+.contactForm {
+    width: 60%;
+    padding: 40px;
     position: absolute;
     top: -115px;
-    right: 273px;
-    background: variables.$secondary;
-}
-
-.formContact {
+    right: 5%;
     background: variables.$secondary;
 
+    label {
+        color: variables.$white;
+    }
+
+    textarea {
+        background: variables.$secondary;
+    }
 }
 
 .contactInput {
+    border: 0;
+    padding-left: 20px;
     background: variables.$secondary;
+    border-bottom: 2px solid variables.$primary;
+    color: variables.$white;
 }

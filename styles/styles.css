@@ -356,7 +356,7 @@ section {
 
 header {
   background-repeat: no-repeat;
-  height: 85vh;
+  height: 114vh;
   background-size: cover;
   background-position: top;
   position: relative;
@@ -405,13 +405,20 @@ i {
   color: #0D457F;
 }
 
-.formInputFlex {
+.boatForm {
+  width: 100%;
+  margin: 0 auto;
+}
+.boatForm button {
+  width: 100%;
+}
+.boatForm .formInputFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  margin-bottom: 20px;
 }
-.formInputFlex .inputFlex {
+.boatForm .formInputFlex .inputFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,13 +426,23 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
-.formInputFlex .inputFlex input {
-  border-bottom: 2px solid #FDD908;
+.boatForm .formInputFlex .inputFlex label {
+  padding-left: 20px;
+}
+
+.firstLastName {
+  margin-right: 5px;
+}
+
+.emailAddress {
+  margin-left: 5px;
+  padding-left: 15px;
 }
 
 textarea {
-  border: 2px solid #FDD908;
+  width: 100%;
 }
 
 button {
@@ -452,6 +469,7 @@ footer p {
 
 .headerHome {
   background-image: url(../assets/home-header.jpg);
+  height: 114vh;
 }
 .headerHome .navWrapper {
   padding-bottom: 75px;
@@ -842,11 +860,21 @@ Trip of Lifetime CSS .tripLifeTimeWrapper {
 }
 
 .blogInput {
+  border: 0;
+  padding-left: 20px;
   background: #EAFEFC;
+  border-bottom: 2px solid #FDD908;
 }
 
 .formBlog {
+  height: 200px;
+  padding-top: 30px;
+  padding-left: 20px;
   background: #EAFEFC;
+}
+
+textarea {
+  border: 2px solid #FDD908;
 }
 
 .headerContact {
@@ -889,19 +917,27 @@ Trip of Lifetime CSS .tripLifeTimeWrapper {
   padding-bottom: 20px;
 }
 
-.myFormContact {
+.contactForm {
+  width: 60%;
+  padding: 40px;
   position: absolute;
   top: -115px;
-  right: 273px;
+  right: 5%;
   background: #0D457F;
 }
-
-.formContact {
+.contactForm label {
+  color: #fff;
+}
+.contactForm textarea {
   background: #0D457F;
 }
 
 .contactInput {
+  border: 0;
+  padding-left: 20px;
   background: #0D457F;
+  border-bottom: 2px solid #FDD908;
+  color: #fff;
 }
 
 @media (max-width: 1150px) {

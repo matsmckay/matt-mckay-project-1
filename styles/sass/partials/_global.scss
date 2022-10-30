@@ -8,7 +8,7 @@
 
 header {
     background-repeat: no-repeat;
-    height: 85vh;
+    height: 114vh;
     background-size: cover;
     background-position: top;
     position: relative;
@@ -57,27 +57,49 @@ i {
     color: variables.$secondary;
 }
 
-.formInputFlex {
-    display: flex;
+// FORM STYLES
+
+.boatForm {
     width: 100%;
+    margin: 0 auto;
 
+    button {
+        width: 100%;
+    }
 
-
-    .inputFlex {
+    .formInputFlex {
         display: flex;
-        flex-direction: column;
+        margin-bottom: 20px;
 
+        .inputFlex {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
 
-        input {
-            border-bottom: 2px solid variables.$primary;
+            label {
+                padding-left: 20px;
 
+            }
         }
     }
 }
 
-textarea {
-    border: 2px solid variables.$primary;
+.firstLastName {
+    margin-right: 5px;
+
 }
+
+.emailAddress {
+    margin-left: 5px;
+    padding-left: 15px;
+}
+
+textarea {
+    width: 100%;
+}
+
+
+// BUTTON STYLES
 
 button {
     border: none;
