@@ -1,5 +1,12 @@
 @use "./variables";
 
+.boatForm {
+    button {
+        color: variables.$primary;
+        background: variables.$secondary;
+    }
+}
+
 .blogInput {
     border: 0;
     padding-left: 20px;

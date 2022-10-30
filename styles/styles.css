@@ -859,6 +859,11 @@ Trip of Lifetime CSS .tripLifeTimeWrapper {
   padding-left: 10px;
 }
 
+.boatForm button {
+  color: #FDD908;
+  background: #0D457F;
+}
+
 .blogInput {
   border: 0;
   padding-left: 20px;
@@ -930,6 +935,7 @@ textarea {
 }
 .contactForm textarea {
   background: #0D457F;
+  color: #fff;
 }
 
 .contactInput {
@@ -938,6 +944,12 @@ textarea {
   background: #0D457F;
   border-bottom: 2px solid #FDD908;
   color: #fff;
+}
+
+.formContact {
+  height: 200px;
+  padding-top: 30px;
+  padding-left: 20px;
 }
 
 @media (max-width: 1150px) {

@@ -78,8 +78,8 @@
                     <!-- END .formInputFlex -->
                     <div class="formComments">
                         <label for="comments"></label>
-                        <textarea class="formContact" name="userComments" id="comments" cols="30" rows="10"
-                            placeholder="Comment" required="true" minlength="10" maxlength="200">
+                        <textarea placeholder="Comment" class="formContact" name="userComments" id="comments"
+                            required="true" minlength="10" maxlength="200">
                             </textarea>
                     </div>
                     <!-- END .formComments -->
@@ -89,6 +89,33 @@
         </section>
 
     </main>
+    <script>
+        // Phase 1
+        // Listening for when a form submits
+        // Upon the form submitting, get the value that the user has typed into the input
+        // After the form submits, alert the user that it's form was successfully sent
+
+        // Create variables to store the form and input elements
+        const formEl = document.querySelector("form");
+        const textareaEl = document.querySelector("textarea");
+
+        // Adding an event listener to the form element
+        formEl.addEventListener("submit", (event) => {
+
+            // prevent form default behaviour
+            event.preventDefault();
+
+            // Store the value from the form's name input element to a variable
+            const task = textareaEl.value;
+            if (task) {
+                alert("Thank you! Your form has been successfully submitted!")
+
+                // Clear the input value back to an empty string
+                textareaEl.value = "";
+            }
+        })
+
+    </script>
 </body>
 <footer>
     <p>Copyright &copy 2019 HackerYou</p>

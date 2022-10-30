@@ -15,6 +15,7 @@
 
     textarea {
         background: variables.$secondary;
+        color: variables.$white;
     }
 }
 
@@ -24,4 +25,10 @@
     background: variables.$secondary;
     border-bottom: 2px solid variables.$primary;
     color: variables.$white;
+}
+
+.formContact {
+    height: 200px;
+    padding-top: 30px;
+    padding-left: 20px;
 }
