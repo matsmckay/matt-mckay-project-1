@@ -103,5 +103,85 @@
 }
 
 @media (max-width: 500px) {
-    // hamburger menu to be implemented
+
+    .navWrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .navBar {
+            padding-top: 0;
+            align-items: center;
+            width: 100%;
+
+            .navFlex {
+                display: flex;
+                list-style: none;
+                padding: 15px 0;
+                margin: 0 auto;
+                justify-content: space-around;
+                position: fixed;
+                left: -100%;
+                top: 50px;
+                background: #0D457F;
+                width: 100%;
+                transition: 0.3s;
+                opacity: 0.9;
+                z-index: 20;
+            }
+
+            .navFlex.active {
+                left: 0;
+            }
+
+        }
+    }
+
+    .headerHamburger {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background: variables.$secondary;
+        padding: 0 20px;
+        min-height: 50px;
+        opacity: 0.9;
+
+        .hamburger {
+            display: block;
+            align-items: center;
+            padding-top: 10px;
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        h1 {
+            font-size: 1.15rem;
+            padding-top: 0;
+            color: variables.$primary;
+        }
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: variables.$primary;
+    }
+
+    .mainBlogImg {
+        display: none;
+    }
+
 }

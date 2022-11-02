@@ -22,18 +22,28 @@
         <div class="navListFlex">
             <!-- NAV BEGINS -->
             <div class="navWrapper">
-                <nav>
+                <nav class="navBar">
                     <ul class="navFlex">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./index.html" class="navLink">Home</a></li>
+                        <li><a href="#about" class="navLink">About</a></li>
+                        <li><a href="./blog.html" class="navLink">Blog</a></li>
+                        <li><a href="./contact.html" class="navLink">Contact</a></li>
                     </ul>
                 </nav>
                 <!-- NAV ENDS -->
-                <h1>Blog</h1>
+                <div class="headerHamburger">
+                    <h1>Blog</h1>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <!-- END .hamburger -->
+                </div>
+                <!-- END .headerHamburger -->
+
             </div>
-            <!-- .navWrapper -->
+            <!-- END .navWrapper -->
         </div>
         <!-- END .navListFlex -->
     </header>
@@ -172,6 +182,21 @@
 
     </main>
     <!-- END MAIN SECTION -->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navFlex = document.querySelector(".navFlex");
+        // when user clicks on the hamburger menu, the menu icon will change from three horizontal lines to an 'X' and the NavFlex list items will slide in from the left
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navFlex.classList.toggle("active");
+        });
+
+        // for any of the navFlex list items clicked on (e.g. home, about, blog, contact) in the slide out menu, the hamburger menu will close and the navFlex list items will disappear 
+        document.querySelectorAll(".navLink").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navFlex.classList.remove("active");
+        }))
+    </script>
 </body>
 <footer>
     <p>Copyright &copy 2019 HackerYou</p>

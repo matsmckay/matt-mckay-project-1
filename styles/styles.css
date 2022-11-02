@@ -405,6 +405,10 @@ i {
   color: #0D457F;
 }
 
+.hamburger {
+  display: none;
+}
+
 .boatForm {
   width: 100%;
   margin: 0 auto;
@@ -474,7 +478,8 @@ footer p {
 .headerHome .navWrapper {
   padding-bottom: 75px;
 }
-nav {
+
+.navBar {
   padding-top: 75px;
 }
 
@@ -759,6 +764,7 @@ Trip of Lifetime CSS .tripLifeTimeWrapper {
   position: absolute;
   top: -160px;
   left: 15px;
+  z-index: 10;
 }
 
 .mainBlogText {
@@ -1012,5 +1018,96 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .navWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navWrapper .navBar {
+    padding-top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .navWrapper .navBar .navFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 15px 0;
+    margin: 0 auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: fixed;
+    left: -100%;
+    top: 50px;
+    background: #0D457F;
+    width: 100%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0.9;
+    z-index: 20;
+  }
+  .navWrapper .navBar .navFlex.active {
+    left: 0;
+  }
+  .headerHamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: #0D457F;
+    padding: 0 20px;
+    min-height: 50px;
+    opacity: 0.9;
+  }
+  .headerHamburger .hamburger {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 10px;
+  }
+  .headerHamburger .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .headerHamburger .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .headerHamburger .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  .headerHamburger h1 {
+    font-size: 1.15rem;
+    padding-top: 0;
+    color: #FDD908;
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #FDD908;
+  }
+  .mainBlogImg {
+    display: none;
   }
 }
