@@ -33,7 +33,7 @@
                 </nav>
                 <!-- NAV ENDS -->
                 <div class="headerHamburger">
-                    <h1>Get In Touch</h1>
+                    <h1>BRA - Get In Touch</h1>
                     <div class="hamburger">
                         <span class="bar"></span>
                         <span class="bar"></span>
@@ -100,9 +100,11 @@
 
     </main>
     <script>
-        // Phase 1
+
         // Listening for when a form submits
+
         // Upon the form submitting, get the value that the user has typed into the input
+
         // After the form submits, alert the user that it's form was successfully sent
 
         // Create variables to store the form and input elements
@@ -125,16 +127,38 @@
             }
         })
 
+
+        // I want to make my mobile hamburger menu functional. 
+
+        // I want the user to be able to click on the hamburger menu in top right corner and have two things happen:
+
+        // 1a. I want the icon (three small horizontal lines) I created for the hamburger menu, when clicked upon, to change into an 'X.' 
+
+        // 1b. To accomplish this, I want the middle bar to disappear and for the top and bottom bars to both rotate 45 degrees so that they cross over and overlap into a perfect uppercase letter 'X'
+
+        // 2a. The second thing I want to happen, when my hamburger menu icon is clicked, is for my navigation menu (Home, About, Blog, Contact) to slide in from the right, just underneath my icon and h1 for each page. 
+
+        // 2b. This navigation menu is also fixed in position so when I scroll down the page the menu stays in place. 
+
+        // 2c. The menu will stay open until the user either clicks on the 'X' icon (which now represents the hamburger menu) or one of the nav menu links.
+
+        // Want to target my .hamburger and .navFlex classes so I can do something to them
+
         const hamburger = document.querySelector(".hamburger");
         const navFlex = document.querySelector(".navFlex");
-        // when user clicks on the hamburger menu, the menu icon will change from three horizontal lines to an 'X' and the NavFlex list items will slide in from the left
+
+        // when user clicks on the hamburger menu, the menu icon will change from three horizontal lines to an 'X' and the NavFlex list items will slide in from the right
+
         hamburger.addEventListener("click", () => {
             hamburger.classList.toggle("active");
             navFlex.classList.toggle("active");
         });
 
-        // for any of the navFlex list items clicked on (e.g. home, about, blog, contact) in the slide out menu, the hamburger menu will close and the navFlex list items will disappear 
-        document.querySelectorAll(".navLink").forEach(n => n.addEventListener("click", () => {
+        // I want to querySelectorAll() to target my elements in the nav section with a .navLink class and then use forEach() to iterate on all of them to get them to do something
+
+        // For any of the navFlex list items clicked on (e.g. home, about, blog, contact) in the slide out menu, the hamburger menu will close and the navFlex list items will disappear 
+
+        document.querySelectorAll(".navLink").forEach(item => item.addEventListener("click", () => {
             hamburger.classList.remove("active");
             navFlex.classList.remove("active");
         }))
