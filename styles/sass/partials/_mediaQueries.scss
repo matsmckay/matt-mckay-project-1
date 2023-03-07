@@ -63,8 +63,12 @@
     .aboutContent {
         flex-wrap: wrap;
         padding: 50px 0;
+        
          ul li a {
             justify-content: center;
+        }
+        ul li p {
+            margin-left: 0;
         }
     }
 

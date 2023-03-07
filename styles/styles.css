@@ -1010,6 +1010,9 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .aboutContent ul li p {
+    margin-left: 0;
+  }
   .destinations, .commune {
     margin-bottom: 0;
   }
