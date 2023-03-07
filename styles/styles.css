@@ -965,6 +965,10 @@ textarea {
   }
 }
 @media (max-width: 900px) {
+  .headerHamburger {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
   header {
     height: 60vh;
   }
@@ -977,9 +981,8 @@ textarea {
   .navListFlex .navWrapper {
     padding-bottom: 0;
     width: 100%;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .navListFlex .navWrapper nav ul {
     -ms-flex-pack: distribute;
@@ -988,7 +991,6 @@ textarea {
   h1 {
     -ms-flex-item-align: center;
         align-self: center;
-    padding-top: 183px;
   }
   .aboutProgramLocations img .aboutText {
     padding: 0 50px;
@@ -997,6 +999,19 @@ textarea {
   .aboutProgramLocations img .aboutText img {
     top: 75px;
     bottom: 0;
+  }
+  .aboutContent {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 50px 0;
+  }
+  .aboutContent ul li a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .destinations, .commune {
+    margin-bottom: 0;
   }
   .tripLifetime {
     display: -webkit-box;
