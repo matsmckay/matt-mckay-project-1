@@ -4,17 +4,20 @@
 
 // HEADER STYLES
 
-.headerHome {
+.headerMain {
     background-image: url(../assets/home-header.jpg);
     height: 114vh;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 190px;
     .navWrapper {
 
         padding-bottom: 75px;
     }
 }
 
-.navBar {
+.headerHome .navBar {
     padding-top: 75px;
 }
 

@@ -363,8 +363,8 @@ header {
 }
 
 .navListFlex {
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 .navListFlex .navWrapper {
   width: 80%;
@@ -392,13 +392,14 @@ header {
 .navListFlex .navWrapper nav ul a {
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 29px;
   letter-spacing: 1px;
 }
-.navListFlex .navWrapper h1 {
-  text-align: left;
+
+.bigHeader {
+  text-align: center;
 }
 
 i {
@@ -471,15 +472,25 @@ footer p {
   text-align: center;
 }
 
-.headerHome {
+.headerMain {
   background-image: url(../assets/home-header.jpg);
   height: 114vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 190px;
 }
-.headerHome .navWrapper {
+.headerMain .navWrapper {
   padding-bottom: 75px;
 }
 
-.navBar {
+.headerHome .navBar {
   padding-top: 75px;
 }
 
@@ -963,13 +974,16 @@ textarea {
     top: 50px;
     bottom: 0;
   }
+  .headerMain {
+    height: 75vh;
+  }
 }
 @media (max-width: 900px) {
   .headerHamburger {
     -ms-flex-item-align: center;
         align-self: center;
   }
-  .headerHome {
+  .headerMain {
     height: 40vh;
   }
   .imgHeaderContainer img {

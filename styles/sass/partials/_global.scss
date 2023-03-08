@@ -17,8 +17,8 @@ header {
 // NAV STYLES
 
 .navListFlex {
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: auto;
 
     .navWrapper {
         width: 80%;
@@ -36,7 +36,7 @@ header {
             a {
                 color: variables.$white;
                 font-family: 'Roboto', sans-serif;
-                font-size: 1rem;
+                font-size: 1.7rem;
                 font-weight: 700;
                 line-height: 29px;
                 letter-spacing: 1px;
@@ -44,10 +44,11 @@ header {
             }
         }
 
-        h1 {
-            text-align: left;
-        }
     }
+}
+.bigHeader {
+    text-align: center;
+        
 }
 
 
