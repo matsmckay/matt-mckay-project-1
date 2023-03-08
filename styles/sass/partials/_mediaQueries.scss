@@ -94,6 +94,13 @@
 
 }
 
+@media (max-width: 650px) {
+    .navListFlex li a {
+        font-size: 1.3rem;
+    }
+}
+
+
 @media (max-width: 500px) {
 
     .navWrapper {
@@ -121,13 +128,15 @@
                 opacity: 0.9;
                 z-index: 20;
             }
-
             .navFlex.active {
                 right: 0;
             }
-
         }
     }
+
+    .navListFlex li a {
+        font-size: 1.0rem;
+    }        
 
     .headerHamburger {
         display: flex;

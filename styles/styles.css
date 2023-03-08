@@ -361,6 +361,14 @@ header {
   background-position: top;
   position: relative;
 }
+header a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
 
 .navListFlex {
   width: 100%;
@@ -388,14 +396,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.navListFlex .navWrapper nav ul a {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.7rem;
-  font-weight: 700;
-  line-height: 29px;
-  letter-spacing: 1px;
 }
 
 .bigHeader {
@@ -1052,6 +1052,11 @@ textarea {
             justify-content: center;
   }
 }
+@media (max-width: 650px) {
+  .navListFlex li a {
+    font-size: 1.3rem;
+  }
+}
 @media (max-width: 500px) {
   .navWrapper {
     display: -webkit-box;
@@ -1093,6 +1098,9 @@ textarea {
   }
   .navWrapper .navBar .navFlex.active {
     right: 0;
+  }
+  .navListFlex li a {
+    font-size: 1rem;
   }
   .headerHamburger {
     display: -webkit-box;

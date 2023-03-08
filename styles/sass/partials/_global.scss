@@ -12,6 +12,15 @@ header {
     background-size: cover;
     background-position: top;
     position: relative;
+    a {
+            color: variables.$white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.7rem;
+            font-weight: 700;
+            line-height: 29px;
+            letter-spacing: 1px;
+    
+        }
 }
 
 // NAV STYLES
@@ -33,15 +42,7 @@ header {
             display: flex;
             justify-content: space-between;
 
-            a {
-                color: variables.$white;
-                font-family: 'Roboto', sans-serif;
-                font-size: 1.7rem;
-                font-weight: 700;
-                line-height: 29px;
-                letter-spacing: 1px;
-
-            }
+          
         }
 
     }
