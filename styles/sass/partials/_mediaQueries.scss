@@ -3,13 +3,19 @@
 @media (max-width: 1150px) {
 
     .aboutProgramLocations img {
-        top: 50px;
+        top: 20px;
         bottom: 0;
+
     }
 
     .headerMain {
         height: 75vh;
     }
+
+    .topImage img, .bottomImage img {
+        position: relative;
+    }
+
 
 }
 
