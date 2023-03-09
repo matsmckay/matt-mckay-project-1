@@ -5,18 +5,65 @@
     .aboutProgramLocations img {
         top: 20px;
         bottom: 0;
-
     }
 
     .headerMain {
         height: 75vh;
     }
 
-    .topImage img, .bottomImage img {
-        position: relative;
+    .topImage {
+        display: flex;
+            img {
+            
+            top: -7.5px;
+            width: 95%;
+        }
+    }
+    
+    .bottomImage img {
+        width: 95%;
+    }
+    
+        .bottomImage {
+            width: 50%;
+            display: flex;
+            justify-content: end;
+            position: relative;
+    
+            img {
+                box-shadow: -15px 15px 1px variables.$primary;
+                position: absolute;
+                bottom: -25px;
+                // width: 95%;
+            }
+    
+        }
+
+    .newLocationsText {
+        padding-top: 19px;
+        margin-top: 7px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
+    .ourProgramText {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    button {
+        // align-self: center;
+        border-radius: 10px;
+        font-size: 0.8rem;
+    }
 
+    p {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 900px) {

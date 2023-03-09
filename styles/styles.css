@@ -462,6 +462,7 @@ button {
   line-height: 41.6px;
   text-transform: uppercase;
   padding: 0 10px;
+  cursor: pointer;
 }
 
 footer {
@@ -977,8 +978,68 @@ textarea {
   .headerMain {
     height: 75vh;
   }
-  .topImage img, .bottomImage img {
+  .topImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .topImage img {
+    top: -7.5px;
+    width: 95%;
+  }
+  .bottomImage img {
+    width: 95%;
+  }
+  .bottomImage {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     position: relative;
+  }
+  .bottomImage img {
+    -webkit-box-shadow: -15px 15px 1px #FDD908;
+            box-shadow: -15px 15px 1px #FDD908;
+    position: absolute;
+    bottom: -25px;
+  }
+  .newLocationsText {
+    padding-top: 19px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ourProgramText {
+    margin-top: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  button {
+    border-radius: 10px;
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 900px) {
