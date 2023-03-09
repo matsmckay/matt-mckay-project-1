@@ -971,10 +971,6 @@ textarea {
 }
 
 @media (max-width: 1150px) {
-  .aboutProgramLocations img {
-    top: 20px;
-    bottom: 0;
-  }
   .headerMain {
     height: 75vh;
   }
