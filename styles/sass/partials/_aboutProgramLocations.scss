@@ -28,7 +28,7 @@
     justify-content: center;
     width: 50%;
     padding: 0 100px 25px 100px;
-    margin: 50px 0 25px 0;
+    margin: 25px 0 25px 0;
 
     p {
         text-align: justify;
@@ -43,7 +43,7 @@
     align-items: end;
     width: 50%;
     padding: 25px 100px 0 100px;
-    margin: 25px 0 50px 0;
+    margin: 45px 0 50px 0;
 
     p {
         text-align: justify;
@@ -61,8 +61,8 @@
         position: absolute;
         top: -25px;
         // top: -7.5px;
-        width: 85%;
-        // width: 95%;
+        // width: 85%;
+        width: 95%;
     }
 }
 
@@ -76,8 +76,8 @@
         box-shadow: -15px 15px 1px variables.$primary;
         position: absolute;
         bottom: -25px;
-        width: 85%;
-        // width: 95%;
+        // width: 85%;
+        width: 95%;
     }
 
 }

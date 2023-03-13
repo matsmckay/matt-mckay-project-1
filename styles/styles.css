@@ -603,7 +603,7 @@ i.contact {
           justify-content: center;
   width: 50%;
   padding: 0 100px 25px 100px;
-  margin: 50px 0 25px 0;
+  margin: 25px 0 25px 0;
 }
 .ourProgramText p {
   text-align: justify;
@@ -626,7 +626,7 @@ i.contact {
           align-items: end;
   width: 50%;
   padding: 25px 100px 0 100px;
-  margin: 25px 0 50px 0;
+  margin: 45px 0 50px 0;
 }
 .newLocationsText p {
   text-align: justify;
@@ -642,7 +642,7 @@ i.contact {
           box-shadow: 15px 15px 1px #FDD908;
   position: absolute;
   top: -25px;
-  width: 85%;
+  width: 95%;
 }
 
 .bottomImage {
@@ -660,7 +660,7 @@ i.contact {
           box-shadow: -15px 15px 1px #FDD908;
   position: absolute;
   bottom: -25px;
-  width: 85%;
+  width: 95%;
 }
 
 .aboutCommunity {
@@ -983,9 +983,6 @@ textarea {
     top: -7.5px;
     width: 95%;
   }
-  .bottomImage img {
-    width: 95%;
-  }
   .bottomImage {
     width: 50%;
     display: -webkit-box;
@@ -1000,12 +997,13 @@ textarea {
     -webkit-box-shadow: -15px 15px 1px #FDD908;
             box-shadow: -15px 15px 1px #FDD908;
     position: absolute;
-    bottom: -25px;
+    bottom: -7.5px;
+    width: 95%;
   }
-  .newLocationsText {
-    padding-top: 19px;
-    margin-top: 7px;
-    margin-bottom: 20px;
+  .ourProgramText {
+    margin-top: 12px;
+    padding-left: 60px;
+    padding-right: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1017,8 +1015,10 @@ textarea {
         -ms-flex-align: center;
             align-items: center;
   }
-  .ourProgramText {
-    margin-top: 12px;
+  .newLocationsText {
+    padding: 0px 60px 25px 60px;
+    margin-top: 7px;
+    margin-bottom: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1036,6 +1036,16 @@ textarea {
   }
   p {
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 1000px) {
+  .aboutProgramLocations .ourProgramText {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .aboutProgramLocations .newLocationsText {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media (max-width: 900px) {
