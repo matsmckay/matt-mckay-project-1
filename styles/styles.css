@@ -1043,9 +1043,16 @@ textarea {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .aboutProgramLocations .ourProgram .topImage img {
+    width: 98%;
+  }
   .aboutProgramLocations .newLocationsText {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .aboutProgramLocations .newLocations .bottomImage img {
+    width: 98%;
+    bottom: 7.5px;
   }
 }
 @media (max-width: 900px) {
@@ -1076,14 +1083,6 @@ textarea {
     -ms-flex-item-align: center;
         align-self: center;
   }
-  .aboutProgramLocations img .aboutText {
-    padding: 0 50px;
-    margin: 75px 0;
-  }
-  .aboutProgramLocations img .aboutText img {
-    top: 75px;
-    bottom: 0;
-  }
   .aboutContent {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1096,6 +1095,42 @@ textarea {
   }
   .aboutContent ul li p {
     margin-left: 0;
+  }
+  .ourProgram {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ourProgram .topImage {
+    width: 100%;
+  }
+  .ourProgram .topImage img {
+    position: inherit;
+    -webkit-box-shadow: 15px -15px 1px #fdd908;
+            box-shadow: 15px -15px 1px #fdd908;
+  }
+  .ourProgram .ourProgramText {
+    width: 100%;
+  }
+  .newLocations {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .newLocations .bottomImage {
+    width: 100%;
+  }
+  .newLocations .bottomImage img {
+    position: inherit;
+    -webkit-box-shadow: -15px 15px 1px #fdd908;
+            box-shadow: -15px 15px 1px #fdd908;
+  }
+  .newLocations .newLocationsText {
+    width: 100%;
   }
   .destinations, .commune {
     margin-bottom: 0;

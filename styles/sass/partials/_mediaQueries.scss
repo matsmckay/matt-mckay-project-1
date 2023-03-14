@@ -55,16 +55,18 @@
         .ourProgramText{
             padding-left: 30px;
             padding-right: 30px;
-            // img{
-            //     width: 100%;
-            // }
+        }
+        
+        .ourProgram .topImage img{
+            width: 98%;
         }
         .newLocationsText{
             padding-left: 30px;
             padding-right: 30px;
-            // img{
-            //     width: 100%;
-            // }
+        }
+        .newLocations .bottomImage img { 
+            width: 98%;
+            bottom: 7.5px;
         }
             
     }
@@ -75,28 +77,22 @@
     .headerHamburger {
         align-self: center;
     }
-
     .headerMain {
         height: 40vh;
     }
-
     .imgHeaderContainer img {
         display: none;
     }
-
     .navListFlex {
         width: 100%;
-
         .navWrapper {
             padding-bottom: 0;
             width: 100%;
             justify-content: space-around;
-
             nav ul {
                 justify-content: space-around;
             }
         }
-
     }
 
     h1 {
@@ -104,42 +100,51 @@
         
     }
 
-    .aboutProgramLocations img {
-
-
-        .aboutText {
-            padding: 0 50px;
-            margin: 75px 0;
-
-            img {
-                top: 75px;
-                bottom: 0;
-            }
-        }
-
-    }
-
     .aboutContent {
         flex-wrap: wrap;
-        padding: 50px 0;
-        
-         ul li a {
+        padding: 50px 0;      
+        ul li a {
             justify-content: center;
         }
         ul li p {
             margin-left: 0;
         }
     }
-
+    
+    .ourProgram {
+        flex-direction: column;
+        flex-wrap: wrap;
+        .topImage {
+            width: 100%;
+            img {
+                position: inherit;
+                box-shadow: 15px -15px 1px #fdd908;
+            }
+        }
+        .ourProgramText{
+            width: 100%;
+        }
+    }
+    .newLocations {
+        flex-direction: column-reverse;
+        .bottomImage {
+            width: 100%;
+            img{
+                position: inherit;
+                box-shadow: -15px 15px 1px #fdd908;
+            }
+        }
+        .newLocationsText{
+            width: 100%;
+        }
+    }
     .destinations, .commune {
         margin-bottom: 0;
     }
-
     .tripLifetime {
         display: flex;
         flex-direction: column;
         align-items: center;
-
         .tripLifetimeImg {
             width: 100%;
             display: flex;
