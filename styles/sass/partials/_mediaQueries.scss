@@ -40,8 +40,8 @@
         flex-direction: column;
         align-items: center;
     }
+
     button {
-        // align-self: center;
         border-radius: 10px;
         font-size: 0.8rem;
     }
@@ -56,7 +56,6 @@
             padding-left: 30px;
             padding-right: 30px;
         }
-        
         .ourProgram .topImage img{
             width: 98%;
         }
@@ -67,8 +66,15 @@
         .newLocations .bottomImage img { 
             width: 98%;
             bottom: 7.5px;
-        }
-            
+        }   
+    }
+
+    .aboutCommunity {
+        padding-top: 50px; 
+    }
+
+    .tripLifetime .tripLifetimeImg {
+        width: 45%;
     }
 }
 
@@ -110,7 +116,7 @@
             margin-left: 0;
         }
     }
-    
+
     .ourProgram {
         flex-direction: column;
         flex-wrap: wrap;
@@ -142,19 +148,39 @@
         margin-bottom: 0;
     }
     .tripLifetime {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        // display: flex;
+        // flex-direction: column-reverse;
+        // align-items: center;
         .tripLifetimeImg {
+            width: 50%;
+            // display: flex;
+            // justify-content: center;
+            img{
+                width: 100%;
+            }
+        }
+        .tripLifetimeText {
+            padding-left: 30px;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .tripLifetime {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        .tripLifetimeText {
             width: 100%;
-            display: flex;
-            justify-content: center;
+            align-items: center;
         }
     }
 
-
-
+    .aboutCommunity .aboutBannerImage{
+        padding: 50px 0;
+    }
 }
+
 
 @media (max-width: 650px) {
     .navListFlex li a {

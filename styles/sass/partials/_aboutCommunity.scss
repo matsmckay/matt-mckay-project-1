@@ -7,6 +7,7 @@
     padding: 125px 0 0 0;
 
 
+
     .communityWrapper {
         width: calc(100% * (2 / 3));
         margin: 0 auto;
@@ -37,8 +38,10 @@
     }
 }
 
-Trip of Lifetime CSS .tripLifeTimeWrapper {
-    width: 80%;
+// Trip of Lifetime CSS 
+
+.tripLifeTimeWrapper {
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -47,11 +50,11 @@ Trip of Lifetime CSS .tripLifeTimeWrapper {
     background: variables.$tertiary;
     display: flex;
     margin-bottom: 100px;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
 
     .tripLifetimeImg {
         width: 25%;
-
+        padding-top: 50px;
         img {
             box-shadow: -15px 15px 1px variables.$primary;
         }

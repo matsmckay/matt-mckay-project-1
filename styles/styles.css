@@ -697,8 +697,8 @@ i.contact {
   margin: 0 auto;
 }
 
-Trip of Lifetime CSS .tripLifeTimeWrapper {
-  width: 80%;
+.tripLifeTimeWrapper {
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -708,11 +708,10 @@ Trip of Lifetime CSS .tripLifeTimeWrapper {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 100px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .tripLifetime .tripLifetimeImg {
   width: 25%;
+  padding-top: 50px;
 }
 .tripLifetime .tripLifetimeImg img {
   -webkit-box-shadow: -15px 15px 1px #FDD908;
@@ -1054,6 +1053,12 @@ textarea {
     width: 98%;
     bottom: 7.5px;
   }
+  .aboutCommunity {
+    padding-top: 50px;
+  }
+  .tripLifetime .tripLifetimeImg {
+    width: 45%;
+  }
 }
 @media (max-width: 900px) {
   .headerHamburger {
@@ -1135,26 +1140,37 @@ textarea {
   .destinations, .commune {
     margin-bottom: 0;
   }
+  .tripLifetime .tripLifetimeImg {
+    width: 50%;
+  }
+  .tripLifetime .tripLifetimeImg img {
+    width: 100%;
+  }
+  .tripLifetime .tripLifetimeText {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 850px) {
   .tripLifetime {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tripLifetime .tripLifetimeText {
+    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .tripLifetime .tripLifetimeImg {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .aboutCommunity .aboutBannerImage {
+    padding: 50px 0;
   }
 }
 @media (max-width: 650px) {
