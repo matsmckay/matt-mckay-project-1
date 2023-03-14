@@ -41,6 +41,14 @@
         align-items: center;
     }
 
+    .boatBlog {
+        margin-left: 42px;
+        .mainBlogText {
+        padding: 289px 60px 30px;
+        }
+    } 
+
+
     button {
         border-radius: 10px;
         font-size: 0.8rem;
@@ -75,6 +83,36 @@
 
     .tripLifetime .tripLifetimeImg {
         width: 45%;
+    }
+
+    .mainBlog {
+        flex-direction: column-reverse;
+        .boatBlog{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            position: inherit;
+            margin-left: 0;
+            .mainBlogImg{
+                position: inherit;
+            }
+            .mainBlogText{
+                padding: 0px 10px 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-bottom: 0px solid #FDD908;
+                border-left: 0px solid #FDD908;
+            }
+        }
+    }
+
+    .asideBlog {
+        width: 100%;
+        display: flex;
+        .asideText{
+            margin-left: 0;
+        }
     }
 }
 

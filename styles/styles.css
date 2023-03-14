@@ -1029,6 +1029,12 @@ textarea {
         -ms-flex-align: center;
             align-items: center;
   }
+  .boatBlog {
+    margin-left: 42px;
+  }
+  .boatBlog .mainBlogText {
+    padding: 289px 60px 30px;
+  }
   button {
     border-radius: 10px;
     font-size: 0.8rem;
@@ -1058,6 +1064,51 @@ textarea {
   }
   .tripLifetime .tripLifetimeImg {
     width: 45%;
+  }
+  .mainBlog {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .mainBlog .boatBlog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+    position: inherit;
+    margin-left: 0;
+  }
+  .mainBlog .boatBlog .mainBlogImg {
+    position: inherit;
+  }
+  .mainBlog .boatBlog .mainBlogText {
+    padding: 0px 10px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 0px solid #FDD908;
+    border-left: 0px solid #FDD908;
+  }
+  .asideBlog {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .asideBlog .asideText {
+    margin-left: 0;
   }
 }
 @media (max-width: 900px) {
