@@ -106,12 +106,17 @@
             }
         }
     }
-
     .asideBlog {
         width: 100%;
         display: flex;
         .asideText{
             margin-left: 0;
+        }
+    }
+    .blogWrapper{
+        width: 100%;
+        h3{
+            text-align: center;
         }
     }
 }
@@ -224,6 +229,18 @@
     .navListFlex li a {
         font-size: 1.3rem;
     }
+
+    .formInputFlex{
+        flex-direction: column;
+    }
+    .emailAddress, .firstLastName{
+        margin-left: 0;
+        padding-left: 0;
+        padding-top: 15px;
+        label {
+            align-self:center;
+        }
+    }
 }
 
 
@@ -311,4 +328,11 @@
         display: none;
     }
 
+    .emailAddress, .firstLastName {
+        ::placeholder {
+            display: none;
+            
+            
+        }
+    }
 }
